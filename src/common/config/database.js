@@ -5,9 +5,9 @@ module.exports = {
   database: 'app_' + process.env.APPNAME,
   prefix: 'nideshop_',
   encoding: 'utf8mb4',
-  host: 'process.env.MYSQL_HOST',
-  port: 'process.env.MYSQL_PORT',
-  user: 'process.env.ACCESSKEY',
-  password: 'process.envSECRETKEY',
+  host: process.env.MYSQL_HOST,
+  port: process.env.MYSQL_PORT,
+  user: process.env.ACCESSKEY,
+  password: process.envSECRETKEY,
   dateStrings: true
 };
