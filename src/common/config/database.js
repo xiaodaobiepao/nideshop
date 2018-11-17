@@ -2,7 +2,7 @@ const mysql = require('think-model-mysql');
 
 module.exports = {
   handle: mysql,
-  database: 'nideshop',
+  database: 'app_' + process.env.APPNAME,
   prefix: 'nideshop_',
   encoding: 'utf8mb4',
   host: 'process.env.MYSQL_HOST',
